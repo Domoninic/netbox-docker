@@ -1,0 +1,19 @@
+version: '3.4'
+services:
+  netbox:
+    image: netboxcommunity/netbox:v3.4.2
+    ports:
+      - 8000:8080
+    build:
+      context: .
+      dockerfile: Dockerfile-Plugins
+  netbox-worker:
+    image: netboxcommunity/netbox:v3.4.2
+    build:
+      context: .
+      dockerfile: Dockerfile-Plugins
+  netbox-housekeeping:
+    image: netboxcommunity/netbox:v3.4.2
+    build:
+      context: .
+      dockerfile: Dockerfile-Plugins

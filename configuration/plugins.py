@@ -11,3 +11,9 @@
 #     ADD YOUR SETTINGS HERE
 #   }
 # }
+PLUGINS = ["netbox_metatype_importer"]
+
+PLUGINS_CONFIG = {
+    "netbox_metatype_importer": {"github_token": "YOUR PAT GOES HERE"}
+}
+
